@@ -1,0 +1,359 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body {
+    font-size: 16px;
+}
+/* Estilos generales para todos los dispositivos */
+/*3xl Pantallas Grandes*/
+@media (min-width: 1850px){
+    /*Navbar*/
+    .navcl {
+        background-color: #27292b
+    }
+    .nav {
+        position: relative;
+        left: 660px;
+    }
+    /*Navbar*/
+}
+/*Termina 3xl Pantallas Grandes*/
+
+/*2xl Pantallas Grandes*/
+@media (min-width: 1536px) {
+    body {
+        font-size: 20px;
+    }
+
+    /*Navbar*/
+    .navcl {
+        background-color: #27292b
+    }
+    .nav {
+        position: relative;
+        left: 430px;
+    }
+    /*Navbar*/
+}
+/*Termina 2xl Pantallas Grandes*/
+
+/*xl Pantallas SemiGrandes*/
+@media (min-width: 1280px) and (max-width: 1535px) {
+    body {
+        font-size: 20px;
+    }
+
+    /*Navbar*/
+    .navcl {
+        background-color: #27292b
+    }
+    .nav {
+        position: relative;
+        left: 298px;
+    }
+    .navl {
+        position: relative;
+        left: 30px;
+    }
+    .navll {
+        position: relative;
+        right: 30px;
+    }
+    /*Navbar*/
+}
+/*Termina xl Pantallas SemiGrandes*/
+
+/*lg Pantallas PequeGrandes*/
+@media (min-width: 1024px) and (max-width: 1279px) {
+    body {
+        font-size: 20px;
+    }
+
+    /*Navbar*/
+    .navcl {
+        background-color: #27292b
+    }
+    .nav {
+        position: relative;
+        left: 280px;
+    }
+    .navl {
+        position: relative;
+        left: 30px;
+    }
+    .navll {
+        position: relative;
+        right: 30px;
+    }
+    /*Navbar*/
+
+    /*Empiezan Detalles de productos*/
+.cont{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product{
+    width: 90%;
+    max-width: 750px;
+    display: flex;
+}
+
+.gallery{
+    flex-basis: 47%;
+    background: #241e20;
+    transform: scale(1.08);
+    box-shadow: -10px 5px 10px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+
+}
+
+.gallery .Deta{
+    width: 100%;
+    display: block;
+    padding-top: 100px;
+}
+
+.details{
+    flex-basis: 53%;
+    background: #d6d5d5;
+    padding: 40px;
+    padding-left: 60px;
+    box-shadow: -10px 5px 10px 10px rgba(0, 0, 0, 0.1);
+    font-size: 13px;
+    font-weight: 500;
+    color: #777;
+}
+
+.details .details1{
+    color: #333;
+    font-size: 35px;
+}
+
+.details .details2{
+    color: #555;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.details .details3{
+    color: #00d874;
+    margin-bottom: 20px;
+}
+
+.details .for{
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.size-select{
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.size-select .ta{
+    width: 70px;
+
+}
+
+.size-select .imp:checked + span{
+    color: blue;
+    font-weight: 600;
+}
+
+.size-select .imp{
+    display: none;
+
+}
+
+.size-select span{
+    padding: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+    color: black;
+}
+
+.color-select{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.color-select .col{
+    width: 75px;
+
+}
+
+.color-select span{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-right: 15px;
+    cursor: pointer;
+}
+.color1{
+    background: black;
+}
+
+.color2{
+    background: gray;
+}
+
+.color3{
+    background: white;
+}
+
+.color4{
+    background: beige;
+}
+
+.color-select .colo{
+    display: none;
+
+}
+
+.color-select .colo:checked + span{
+    transform: scale(0.7);
+    box-shadow: 0 0 0 4px #fff, 0 0 0 6px #000;
+}
+
+.quantity-select{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.quantity-select .Canti{
+    width: 75px;
+
+}
+
+.quantity-select .Cant{
+    background:  #eee;
+    border: 0;
+    outline: 0;
+    padding: 2px 2px 2px 15px;
+    width: 50px;
+    border-radius: 12px;
+}
+
+.for .button-car{
+    background: #553ff0;
+    color: #fff;
+    font-size: 17px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 30px;
+    border: 0;
+    outline: 0;
+    margin-top: 50px;
+    box-shadow: 0 10px 10px rgba(85, 63, 240, 0.25);
+    cursor: pointer;
+}
+
+.controls{
+    position: absolute;
+    bottom: 40px;
+    right: 20px;
+}
+.btn{
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    margin: 10px;
+    cursor: pointer;
+}
+
+.btn .active{
+    background: #553ff0;
+
+}
+
+/*Terminan Detalles de productos*/
+
+
+
+
+/*Estilos opciones de ususario*/
+.user-menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #343a40;
+    border: 1px solid #292b2c;
+    padding: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.user-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.user-menu ul li {
+    margin-bottom: 10px;
+}
+
+/* Mostrar el menú cuando se haga clic en la imagen */
+.user-menu.active {
+    display: block;
+}
+/*Terminan Estilos opciones de ususario*/
+
+/*Empieza Estilo Categoria*/
+.let{
+    font-family: 'Impact', fantasy;
+}
+.lett{
+    font-family: 'Impact', fantasy;
+    color: #777;
+}
+.h5{
+    font-family: 'Impact', fantasy;
+}
+/*Termina Stilo Categorias*/
+
+/*Empieza imagen de perfil*/
+.imag{
+    border-radius: 100%;
+}
+/*Termina imagen de perfil*/
+}
+/*Termina lg Pantallas PequeGrandes*/
+
+/*md Pantallas Medianas*/
+@media (min-width: 768px) and (max-width: 1023px) {
+    body {
+        font-size: 18px;
+    }
+
+    /*Navbar*/
+    .navcl {
+        background-color: #27292b
+    }
+    /*Navbar*/
+}
+/*Termina md Panrallas Medianas*/
+
+/*sm Pantallas Pequeñas*/
+@media (min-width: 340px) and (max-width: 767px) {
+    body {
+        font-size: 14px;
+    }
+    .navcl {
+        background-color: #27292b
+    }
+}
+/*Termina sm Pantallas Pequeñas*/

@@ -1,0 +1,231 @@
+/*URL fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+
+/* Globals */
+* {
+	font-family: "Ubuntu", sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--blue: #2a2185;
+	--white: #fff;
+	--gray: #f5f5f5;
+	--black1: #222;
+	--black2: #999;
+}
+
+
+body{
+	min-height: 100vh;
+	overflow-x: hidden;
+}
+/*Empieza Navbar*/
+.Container{
+	position: relative;
+	width: 100%;
+}
+.imag {
+	width: 250px;
+	height: 100px;
+}
+.Navigation{
+	position: fixed;
+	width: 300px;
+	height: 100%;
+	background: #0e0e0e;
+	border-left: 10px solid rgb(15, 15, 15);
+	transition: 0.5s;
+	overflow: hidden;
+}
+.Navigation.active{
+	width: 110px;
+}
+.Navigation .Nav{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+.Navigation .Nav .NavLi{
+	position: relative;
+	width: 100%;
+	list-style: none;
+	border-top-left-radius: 30px;
+	border-bottom-left-radius: 30px;
+}
+.Navigation .Nav .NavLi:hover,
+.Navigation .Nav .NavLi.hovered{
+	background-color: #929292;
+}
+.Navigation .Nav .NavLi:nth-child(1){
+	margin-bottom: 40px;
+	pointer-events: none;
+}
+.Navigation .Nav .NavLi a{
+	position: relative;
+	display: block;
+	width: 100%;
+	display: flex;
+	text-decoration: none;
+	color: #fff;
+}
+.Navigation .Nav .NavLi:hover a,
+.Navigation .Nav .NavLi.hovered a{
+	color: #222;
+}
+.Navigation .Nav .NavLi a .Icon{
+	position: relative;
+	display: block;
+	min-width: 60px;
+	height: 60px;
+	line-height: 75px;
+	text-align: center;
+}
+.Navigation .Nav .NavLi a .Icon ion-icon{
+	font-size: 1.75rem;
+}
+.Navigation .Nav .NavLi a .Title{
+	position: relative;
+	display: block;
+	padding: 0 10px;
+	height: 60px;
+	line-height: 60px;
+	text-align: start;
+	white-space: nowrap;
+}
+/*Termina Navbar*/
+
+/*Empieza Curve outside*/
+.Navigation .Nav .NavLi:hover a::before,
+.Navigation .Nav .NavLi.hovered a::before{
+	content: "";
+	position: absolute;
+	right: 0;
+	top: -50px;
+	width: 50px;
+	height: 50px;
+	background-color: transparent;
+	border-radius: 50%;
+	box-shadow: 55px 55px 0 20px white;
+	pointer-events: none;
+}
+.Navigation .Nav .NavLi:hover a::after,
+.Navigation .Nav .NavLi.hovered a::after{
+	content: "";
+	position: absolute;
+	right: 0;
+	bottom: -50px;
+	width: 50px;
+	height: 50px;
+	background-color: transparent;
+	border-radius: 50%;
+	box-shadow: 55px -55px 0 20px white;
+	pointer-events: none;
+}
+/*Termina Curve outside*/
+
+/*Empieza Main*/
+.main{
+	position: absolute;
+	width: calc(100% - 300px);
+	left: 300px;
+	min-height: 100vh;
+	background: white;
+	transition: 0.5s;
+}
+.topbar{
+	width: 100%;
+	height: 60px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 10px;
+}
+.toggle{
+	position: relative;
+	width: 60px;
+	height: 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 2.5rem;
+	cursor: pointer;
+}
+.search{
+	position: relative;
+	width: 400px;
+	margin: 0 10px;
+}
+.search label{
+	position: relative;
+	width: 100%;
+}
+.search label input{
+	width: 100%;
+	height: 40px;
+	border-radius: 40px;
+	padding: 5px 20px;
+	padding-left: 35px;
+	font-size: 10px;
+	outline: none;
+	border: 1px solid var(--black2);
+}
+.search label ion-icon{
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	font-size: 1.2rem;
+}
+.User{
+	position: relative;
+	width: 40px;
+	height: 40px;
+	left: -15px;
+	border-radius: 50%;
+	overflow: hidden;
+	cursor: pointer;
+}
+.User .Users{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+/*Termina Main*/
+
+
+/*Stilos Products*/
+
+.card{
+    position: relative;
+    left: 24.5%;
+    top: 50px;
+    width: 75%;
+	height: 100%;
+}
+
+/*Table*/
+.table scope{
+	position: relative;
+}
+/*Termina Table*/
+
+/*botn Agregar Producto*/
+.boton{
+	position: relative;
+	left: 1000px;
+	top: 80px;
+}
+/*Termina Botn Agregar productos*/
+.ima{
+	border-radius: 50%;
+	width:45px;
+	height: 45px;
+}
+/*Terminana Stilos Products*/
+

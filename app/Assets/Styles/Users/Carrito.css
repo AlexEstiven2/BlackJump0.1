@@ -1,0 +1,217 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  main {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  
+  section {
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 45%;
+  }
+  
+  h2 {
+    margin-top: 0;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+  }
+  
+  .product-card {
+    margin-bottom: 20px;
+  }
+  
+  .product-card img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+  }
+  
+  .cart-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #555;
+  }
+  
+  .total {
+    margin-top: 20px;
+    text-align: right;
+  }
+  
+  #cart-items .product-card {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+  }
+  
+  #cart-items .product-card img {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+  }
+  
+  #total-amount {
+    font-weight: bold;
+  }
+  
+  /* Responsividad */
+  @media (max-width: 768px) {
+    main {
+      flex-direction: column;
+    }
+    section {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+
+  /*Estilos opciones de ususario*/
+.user-menu {
+  display: none;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  background-color: #343a40;
+  border: 1px solid #292b2c;
+  padding: 10px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.user-menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.user-menu ul li {
+  margin-bottom: 10px;
+}
+
+/* Mostrar el menú cuando se haga clic en la imagen */
+.user-menu.active {
+  display: block;
+}
+/*Terminan Estilos opciones de ususario*/
+
+/*Empieza imagen de perfil*/
+.imag{
+  border-radius: 100%;
+}
+/*Termina imagen de perfil*/
+
+/*3xl Pantallas Grandes*/
+@media (min-width: 1850px){
+  /*Navbar*/
+  .navcl {
+      background-color: #27292b
+  }
+  .nav {
+      position: relative;
+      left: 660px;
+  }
+  /*Navbar*/
+}
+/*Termina 3xl Pantallas Grandes*/
+
+/*2xl Pantallas Grandes*/
+@media (min-width: 1536px) and (max-width: 1850px) {
+  /*Navbar*/
+  .navcl {
+      background-color: #27292b
+  }
+  .nav {
+      position: relative;
+      left: 430px;
+  }
+  /*Navbar*/
+}
+/*Termina 2xl Pantallas Grandes*/
+
+/*xl Pantallas SemiGrandes*/
+@media (min-width: 1280px) and (max-width: 1535px) {
+  /*Navbar*/
+  .navcl {
+      background-color: #27292b
+  }
+  .nav {
+      position: relative;
+      left: 298px;
+  }
+  .navl {
+      position: relative;
+      left: 30px;
+  }
+  .navll {
+      position: relative;
+      right: 30px;
+  }
+  /*Navbar*/
+}
+/*Termina xl Pantallas SemiGrandes*/
+
+/*lg Pantallas PequeGrandes*/
+@media (min-width: 1024px) and (max-width: 1279px) {
+  /*Navbar*/
+  .navcl {
+      background-color: #27292b
+  }
+  .nav {
+      position: relative;
+      left: 280px;
+  }
+  .navl {
+      position: relative;
+      left: 30px;
+  }
+  .navll {
+      position: relative;
+      right: 30px;
+  }
+  /*Navbar*/
+}
+/*Termina lg Pantallas PequeGrandes*/
+
+/*md Pantallas Medianas*/
+@media (min-width: 768px) and (max-width: 1023px) {
+  /*Navbar*/
+  .navcl {
+      background-color: #27292b
+  }
+  /*Navbar*/
+}
+/*Termina md Panrallas Medianas*/
+
+/*sm Pantallas Pequeñas*/
+@media (min-width: 340px) and (max-width: 767px) {
+  /*Navbar*/
+  .navcl {
+      background-color: #27292b
+  }
+  /*Navbar*/
+}
+/*Termina sm Pantallas Pequeñas*/

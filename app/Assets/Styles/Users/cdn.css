@@ -1,0 +1,1431 @@
+/* Estilos generales para todos los dispositivos */
+body {
+    font-size: 16px;
+}
+
+/*3xl Pantallas Grandes*/
+@media (min-width: 1850px){
+    body {
+        font-size: 20px;
+    }
+
+    /*Navbar*/
+    .navcl {
+        background-color: #27292b
+    }
+    .nav {
+        position: relative;
+        left: 660px;
+    }
+    /*Navbar*/
+
+    /*Carrucel*/
+    .carru {
+        max-width: 100%;
+        max-height: none;
+        height: 900px;
+        width: 2500px;
+    }
+    /*Carrucel*/
+
+    /* Estilos personalizados para el encabezado */
+    .titulo-principal {
+        font-family: 'Impact', fantasy;
+        font-size: 48px;
+        font-weight: bold;
+        color: #000000;
+    }
+    .subtitulo {
+        font-family: 'Impact', fantasy;
+        font-size: 24px;
+        color: #777;
+        margin-top: 20px;
+    }
+    /*Terminan Estilos personalizados*/
+
+    /*Empieza Estilo Categoria*/
+    .let {
+        font-family: 'Impact', fantasy;
+    }
+    .lett {
+        font-family: 'Impact', fantasy;
+        color: #777;
+    }
+    .cat {
+        width: 320px;
+        height: 320px;
+        border-radius: 100%;
+    }
+    .categorias-scroll-container {
+        overflow-x: auto;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+    .categorias-scroll-container::-webkit-scrollbar {
+        display: none;
+    }
+    .categorias-scroll {
+        display: flex;
+        overflow-x: scroll;
+        /* Cambiar a scroll para habilitar el desplazamiento horizontal */
+        white-space: nowrap;
+        /* Asegurarse de que las categorías se muestren en una sola línea */
+    }
+    .categoria {
+        flex: 0 0 auto;
+        margin-right: 20px;
+        /* Espacio entre las categorías */
+        text-align: center;
+        white-space: nowrap;
+        /* Evita que las categorías se rompan en múltiples líneas */
+    }
+    /*Termina Stilo Categorias*/
+
+    /*Empieza Card*/
+    .card-carousel {
+        display: flex;
+        /* Muestra las cards en una línea horizontal */
+        overflow-x: auto;
+        /* Permite el scroll horizontal */
+        scroll-snap-type: x mandatory;
+        /* Hace que el scroll se detenga en cada card */
+        padding: 10px;
+    }
+    /* Estilos para cada card */
+    .card {
+        font-family: 'Comic Sans', fantasy;
+        min-width: 300px;
+        flex-shrink: 0;
+        /* Evita que las cards se reduzcan para ajustarse al contenedor */
+        margin-right: 20px;
+        /* Espacio entre las cards */
+        scroll-snap-align: start;
+        /* Define el punto de inicio para el scroll */
+        text-align: center;
+        /* Agrega más estilos de diseño para las cards aquí */
+    }
+    /* Estilos para la imagen del producto */
+    .card img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 8px;
+        margin-bottom: 10px;
+    }
+    /* Estilos para el botón "Añadir al carrito" */
+    .btn-add-to-cart {
+        font-family: 'Comic Sans', fantasy;
+        padding: 8px 16px;
+        background-color: #27292b;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        /* Agrega más estilos de diseño para el botón aquí */
+    }
+    .h5 {
+        font-family: 'Impact', fantasy;
+    }
+    .compra {
+        font-family: 'Comic Sans', fantasy;
+        text-align: center;
+        background-color: #27292b;
+    }
+    .title {
+        text-align: center;
+        font-family: 'Impact', fantasy;
+    }
+    /*Terminana cards*/
+
+    /*Slider imgenes*/
+    .hi-slide {
+        position: relative;
+        width: 754px;
+        height: 292px;
+        border-radius: 50px;
+        margin: 115px auto 0;
+    }
+    .hi-slide .hi-next,
+    .hi-slide .hi-prev {
+        position: absolute;
+        top: 50%;
+        width: 40px;
+        height: 40px;
+        margin-top: -20px;
+        border-radius: 50px;
+        line-height: 40px;
+        text-align: center;
+        cursor: pointer;
+        background-color: white;
+        color: black;
+        transition: all 0.7s;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .hi-slide .hi-next:hover,
+    .hi-slide .hi-prev:hover {
+        opacity: 1;
+        background-color: white;
+    }
+    .hi-slide .hi-prev {
+        left: -60px;
+    }
+    .hi-slide .hi-prev::before {
+        content: '<';
+    }
+    .hi-slide .hi-next {
+        right: -60px;
+    }
+    .hi-slide .hi-next::before {
+        content: '>';
+    }
+    .hi-slide>ul {
+        list-style: none;
+        position: relative;
+        width: 754px;
+        height: 292px;
+        margin: 0;
+        padding: 0;
+    }
+    .hi-slide>ul>li {
+        overflow: hidden;
+        position: absolute;
+        z-index: 0;
+        left: 377px;
+        top: 147px;
+        width: 0;
+        height: 0;
+        margin: 0;
+        padding: 0;
+        border: 3px solid white;
+        cursor: pointer;
+        background-color: #333;
+    }
+    .hi-slide>ul>li>img {
+        width: 100%;
+        height: 100%;
+        background-position: center;
+    }
+    /*Termina slider imgenes*/
+}
+/*Termina 3xl Pantallas Grandes*/
+
+/*2xl Pantallas Grandes*/
+@media (min-width: 1536px) and (max-width: 1850px) {
+    body {
+        font-size: 20px;
+    }
+
+    /*Navbar*/
+    .navcl {
+        background-color: #27292b
+    }
+    .nav {
+        position: relative;
+        left: 430px;
+    }
+    /*Navbar*/
+
+    /*Carrucel*/
+    .carru {
+        max-width: 100%;
+        max-height: none;
+        height: 900px;
+        width: 2500px;
+    }
+    /*Carrucel*/
+
+    /* Estilos personalizados para el encabezado */
+    .titulo-principal {
+        font-family: 'Impact', fantasy;
+        font-size: 48px;
+        font-weight: bold;
+        color: #000000;
+    }
+
+    .subtitulo {
+        font-family: 'Impact', fantasy;
+        font-size: 24px;
+        color: #777;
+        margin-top: 20px;
+    }
+
+    /*Terminan Estilos personalizados*/
+
+    /*Empieza Estilo Categoria*/
+    .let {
+        font-family: 'Impact', fantasy;
+    }
+
+    .lett {
+        font-family: 'Impact', fantasy;
+        color: #777;
+    }
+
+    .cat {
+        width: 320px;
+        height: 320px;
+        border-radius: 100%;
+    }
+
+    .categorias-scroll-container {
+        overflow-x: auto;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+
+    .categorias-scroll-container::-webkit-scrollbar {
+        display: none;
+    }
+
+    .categorias-scroll {
+        display: flex;
+        overflow-x: scroll;
+        /* Cambiar a scroll para habilitar el desplazamiento horizontal */
+        white-space: nowrap;
+        /* Asegurarse de que las categorías se muestren en una sola línea */
+    }
+
+    .categoria {
+        flex: 0 0 auto;
+        margin-right: 20px;
+        /* Espacio entre las categorías */
+        text-align: center;
+        white-space: nowrap;
+        /* Evita que las categorías se rompan en múltiples líneas */
+    }
+
+    /*Termina Stilo Categorias*/
+
+    /*Empieza Card*/
+    .card-carousel {
+        display: flex;
+        /* Muestra las cards en una línea horizontal */
+        overflow-x: auto;
+        /* Permite el scroll horizontal */
+        scroll-snap-type: x mandatory;
+        /* Hace que el scroll se detenga en cada card */
+        padding: 10px;
+    }
+
+    /* Estilos para cada card */
+    .card {
+        font-family: 'Comic Sans', fantasy;
+        min-width: 300px;
+        flex-shrink: 0;
+        /* Evita que las cards se reduzcan para ajustarse al contenedor */
+        margin-right: 20px;
+        /* Espacio entre las cards */
+        scroll-snap-align: start;
+        /* Define el punto de inicio para el scroll */
+        text-align: center;
+        /* Agrega más estilos de diseño para las cards aquí */
+    }
+
+    /* Estilos para la imagen del producto */
+    .card img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 8px;
+        margin-bottom: 10px;
+    }
+
+    /* Estilos para el botón "Añadir al carrito" */
+    .btn-add-to-cart {
+        font-family: 'Comic Sans', fantasy;
+        padding: 8px 16px;
+        background-color: #27292b;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        /* Agrega más estilos de diseño para el botón aquí */
+    }
+
+    .h5 {
+        font-family: 'Impact', fantasy;
+    }
+
+    .compra {
+        font-family: 'Comic Sans', fantasy;
+        text-align: center;
+        background-color: #27292b;
+    }
+
+    .title {
+        text-align: center;
+        font-family: 'Impact', fantasy;
+    }
+
+    /*Terminana cards*/
+
+    /*Slider imgenes*/
+    .hi-slide {
+        position: relative;
+        width: 754px;
+        height: 292px;
+        border-radius: 50px;
+        margin: 115px auto 0;
+    }
+
+    .hi-slide .hi-next,
+    .hi-slide .hi-prev {
+        position: absolute;
+        top: 50%;
+        width: 40px;
+        height: 40px;
+        margin-top: -20px;
+        border-radius: 50px;
+        line-height: 40px;
+        text-align: center;
+        cursor: pointer;
+        background-color: white;
+        color: black;
+        transition: all 0.7s;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .hi-slide .hi-next:hover,
+    .hi-slide .hi-prev:hover {
+        opacity: 1;
+        background-color: white;
+    }
+
+    .hi-slide .hi-prev {
+        left: -60px;
+    }
+
+    .hi-slide .hi-prev::before {
+        content: '<';
+    }
+
+    .hi-slide .hi-next {
+        right: -60px;
+    }
+
+    .hi-slide .hi-next::before {
+        content: '>';
+    }
+
+    .hi-slide>ul {
+        list-style: none;
+        position: relative;
+        width: 754px;
+        height: 292px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .hi-slide>ul>li {
+        overflow: hidden;
+        position: absolute;
+        z-index: 0;
+        left: 377px;
+        top: 147px;
+        width: 0;
+        height: 0;
+        margin: 0;
+        padding: 0;
+        border: 3px solid white;
+        cursor: pointer;
+        background-color: #333;
+    }
+
+    .hi-slide>ul>li>img {
+        width: 100%;
+        height: 100%;
+        background-position: center;
+    }
+
+    /*Termina slider imgenes*/
+}
+/*Termina 2xl Pantallas Grandes*/
+
+/*xl Pantallas SemiGrandes*/
+@media (min-width: 1280px) and (max-width: 1535px) {
+    body {
+        font-size: 20px;
+    }
+
+    /*Navbar*/
+    .navcl {
+        background-color: #27292b
+    }
+
+    .nav {
+        position: relative;
+        left: 298px;
+    }
+
+    .navl {
+        position: relative;
+        left: 30px;
+    }
+
+    .navll {
+        position: relative;
+        right: 30px;
+    }
+
+    /*Navbar*/
+
+    /*Carrucel*/
+    .carru {
+        max-width: 100%;
+        max-height: none;
+        height: 900px;
+        width: 2500px;
+    }
+
+    /*Carrucel*/
+
+    /* Estilos personalizados para el encabezado */
+    .titulo-principal {
+        font-family: 'Impact', fantasy;
+        font-size: 48px;
+        font-weight: bold;
+        color: #000000;
+    }
+
+    .subtitulo {
+        font-family: 'Ayuthaya', fantasy;
+        font-size: 24px;
+        color: #242424;
+        margin-top: 20px;
+    }
+
+    /*Terminan Estilos personalizados*/
+
+    /*Empieza Estilo Categoria*/
+    .let {
+        font-family: 'Impact', fantasy;
+        color: #000000;
+    }
+
+    .lett {
+        font-family: 'Ayuthaya', fantasy;
+        color: #242424;
+    }
+
+    .cat {
+        width: 320px;
+        height: 320px;
+        border-radius: 100%;
+    }
+
+    .categorias-scroll-container {
+        overflow-x: auto;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+
+    .categorias-scroll-container::-webkit-scrollbar {
+        display: none;
+    }
+
+    .categorias-scroll {
+        display: flex;
+        overflow-x: scroll;
+        /* Cambiar a scroll para habilitar el desplazamiento horizontal */
+        white-space: nowrap;
+        /* Asegurarse de que las categorías se muestren en una sola línea */
+    }
+
+    .categoria {
+        flex: 0 0 auto;
+        margin-right: 20px;
+        /* Espacio entre las categorías */
+        text-align: center;
+        white-space: nowrap;
+        /* Evita que las categorías se rompan en múltiples líneas */
+    }
+
+    /*Termina Stilo Categorias*/
+
+    /*Empieza Card*/
+    .card-carousel {
+        display: flex;
+        /* Muestra las cards en una línea horizontal */
+        overflow-x: auto;
+        /* Permite el scroll horizontal */
+        scroll-snap-type: x mandatory;
+        /* Hace que el scroll se detenga en cada card */
+        padding: 10px;
+    }
+
+    /* Estilos para cada card */
+    .card {
+        font-family: 'Helvetica', fantasy;
+        min-width: 300px;
+        flex-shrink: 0;
+        /* Evita que las cards se reduzcan para ajustarse al contenedor */
+        margin-right: 20px;
+        /* Espacio entre las cards */
+        scroll-snap-align: start;
+        /* Define el punto de inicio para el scroll */
+        text-align: center;
+        /* Agrega más estilos de diseño para las cards aquí */
+    }
+    /* Estilos para la imagen del producto */
+    .card img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 8px;
+        margin-bottom: 10px;
+    }
+
+    /* Estilos para el botón "Añadir al carrito" */
+    .btn-add-to-cart {
+        font-family: 'Helvetica', fantasy;
+        padding: 8px 16px;
+        background-color: #27292b;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        /* Agrega más estilos de diseño para el botón aquí */
+    }
+    .h5 {
+        font-family: 'Impact', fantasy;
+    }
+    .compra {
+        font-family: 'Ayutaya', fantasy;
+        text-align: center;
+        background-color: #27292b;
+    }
+    .title {
+        text-align: center;
+        font-family: 'Impact', fantasy;
+        color: #000000;
+    }
+    /*Terminana cards*/
+
+
+    /*Slider imgenes*/
+    .hi-slide {
+        position: relative;
+        width: 754px;
+        height: 292px;
+        border-radius: 50px;
+        margin: 115px auto 0;
+    }
+
+    .hi-slide .hi-next,
+    .hi-slide .hi-prev {
+        position: absolute;
+        top: 50%;
+        width: 40px;
+        height: 40px;
+        margin-top: -20px;
+        border-radius: 50px;
+        line-height: 40px;
+        text-align: center;
+        cursor: pointer;
+        background-color: white;
+        color: black;
+        transition: all 0.7s;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .hi-slide .hi-next:hover,
+    .hi-slide .hi-prev:hover {
+        opacity: 1;
+        background-color: white;
+    }
+
+    .hi-slide .hi-prev {
+        left: -60px;
+    }
+
+    .hi-slide .hi-prev::before {
+        content: '<';
+    }
+
+    .hi-slide .hi-next {
+        right: -60px;
+    }
+
+    .hi-slide .hi-next::before {
+        content: '>';
+    }
+
+    .hi-slide>ul {
+        list-style: none;
+        position: relative;
+        width: 754px;
+        height: 292px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .hi-slide>ul>li {
+        overflow: hidden;
+        position: absolute;
+        z-index: 0;
+        left: 377px;
+        top: 147px;
+        width: 0;
+        height: 0;
+        margin: 0;
+        padding: 0;
+        border: 3px solid white;
+        cursor: pointer;
+        background-color: #333;
+    }
+
+    .hi-slide>ul>li>img {
+        width: 100%;
+        height: 100%;
+        background-position: center;
+    }
+
+    /*Termina slider imgenes*/
+}
+/*Termina xl Pantallas SemiGrandes*/
+
+/*lg Pantallas PequeGrandes*/
+@media (min-width: 1024px) and (max-width: 1279px) {
+    body {
+        font-size: 20px;
+    }
+
+    /*Navbar*/
+    .navcl {
+        background-color: #27292b
+    }
+
+    .nav {
+        position: relative;
+        left: 280px;
+    }
+
+    .navl {
+        position: relative;
+        left: 30px;
+    }
+
+    .navll {
+        position: relative;
+        right: 30px;
+    }
+
+    /*Navbar*/
+
+    /*Carrucel*/
+    .carru {
+        max-width: 100%;
+        max-height: none;
+        height: 900px;
+        width: 2500px;
+    }
+
+    /*Carrucel*/
+
+    /* Estilos personalizados para el encabezado */
+    .titulo-principal {
+        font-family: 'Impact', fantasy;
+        font-size: 48px;
+        font-weight: bold;
+        color: #000000;
+    }
+
+    .subtitulo {
+        font-family: 'Ayutaya', fantasy;
+        font-size: 24px;
+        color: #242424;
+        margin-top: 20px;
+    }
+
+    /*Terminan Estilos personalizados*/
+
+    /*Empieza Estilo Categoria*/
+    .let {
+        font-family: 'Impact', fantasy;
+        color: #000000;
+    }
+
+    .lett {
+        font-family: 'Ayuthaya', fantasy;
+        color: #242424;
+    }
+
+    .cat {
+        width: 320px;
+        height: 320px;
+        border-radius: 100%;
+    }
+
+    .categorias-scroll-container {
+        overflow-x: auto;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+
+    .categorias-scroll-container::-webkit-scrollbar {
+        display: none;
+    }
+
+    .categorias-scroll {
+        display: flex;
+        overflow-x: scroll;
+        /* Cambiar a scroll para habilitar el desplazamiento horizontal */
+        white-space: nowrap;
+        /* Asegurarse de que las categorías se muestren en una sola línea */
+    }
+
+    .categoria {
+        flex: 0 0 auto;
+        margin-right: 20px;
+        /* Espacio entre las categorías */
+        text-align: center;
+        white-space: nowrap;
+        /* Evita que las categorías se rompan en múltiples líneas */
+    }
+
+    /*Termina Stilo Categorias*/
+
+    /*Empieza Card*/
+    .card-carousel {
+        display: flex;
+        /* Muestra las cards en una línea horizontal */
+        overflow-x: auto;
+        /* Permite el scroll horizontal */
+        scroll-snap-type: x mandatory;
+        /* Hace que el scroll se detenga en cada card */
+        padding: 10px;
+    }
+
+    /* Estilos para cada card */
+    .card {
+        font-family: 'Helvetica', fantasy;
+        min-width: 300px;
+        flex-shrink: 0;
+        /* Evita que las cards se reduzcan para ajustarse al contenedor */
+        margin-right: 20px;
+        /* Espacio entre las cards */
+        scroll-snap-align: start;
+        /* Define el punto de inicio para el scroll */
+        text-align: center;
+        /* Agrega más estilos de diseño para las cards aquí */
+    }
+
+    /* Estilos para la imagen del producto */
+    .card img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 8px;
+        margin-bottom: 10px;
+    }
+
+    /* Estilos para el botón "Añadir al carrito" */
+    .btn-add-to-cart {
+        font-family: 'Helvetica', fantasy;
+        padding: 8px 16px;
+        background-color: #27292b;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        /* Agrega más estilos de diseño para el botón aquí */
+    }
+
+    .h5 {
+        font-family: 'Impact', fantasy;
+    }
+    .compra {
+        font-family: 'Ayutaya', fantasy;
+        text-align: center;
+        background-color: #27292b;
+    }
+    .title {
+        text-align: center;
+        font-family: 'Impact', fantasy;
+        color: #000000;
+    }
+    /*Terminana cards*/
+
+    /*Estilos modal*/
+.modal-content {
+    font-family: 'Impact', fantasy;
+    text-align: center;
+    color: black;
+    font-size: 18px;
+}
+.close{
+	margin: 0 !important;
+
+}
+.modal-title{
+	font-family: 'Impact', fantasy;
+	margin: 0 !important;
+	width: 100%;
+	text-align: center;
+	color: rgb(23, 22, 22);
+	font-size: 30px;
+}
+.NombreP {
+	font-family: 'Ayuthaya', fantasy;
+    font-size: 20px;
+    color: black;
+}
+
+.description {
+	font-family: 'Helvetica', fantasy;
+    font-size: 20px;
+    color: rgb(53, 52, 52);
+}
+
+.color, .selected-color, .estado, .genero, .tallas, .selected-size, .price, .cantidad {
+    font-family: 'Helvetica', fantasyf;
+    font-size: 18px;
+    color: rgb(53, 52, 52);
+}
+
+select {
+    background: rgb(252, 252, 252);
+    font-size: 22px;
+}
+
+.btn-primary {
+    background-color: #050709;
+    border-color: #007bff;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+/*Terminan estilos del modal*/
+
+    /*Slider imgenes*/
+    .hi-slide {
+        position: relative;
+        width: 754px;
+        height: 292px;
+        border-radius: 50px;
+        margin: 115px auto 0;
+    }
+
+    .hi-slide .hi-next,
+    .hi-slide .hi-prev {
+        position: absolute;
+        top: 50%;
+        width: 40px;
+        height: 40px;
+        margin-top: -20px;
+        border-radius: 50px;
+        line-height: 40px;
+        text-align: center;
+        cursor: pointer;
+        background-color: white;
+        color: black;
+        transition: all 0.7s;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .hi-slide .hi-next:hover,
+    .hi-slide .hi-prev:hover {
+        opacity: 1;
+        background-color: white;
+    }
+
+    .hi-slide .hi-prev {
+        left: -60px;
+    }
+
+    .hi-slide .hi-prev::before {
+        content: '<';
+    }
+
+    .hi-slide .hi-next {
+        right: -60px;
+    }
+
+    .hi-slide .hi-next::before {
+        content: '>';
+    }
+
+    .hi-slide>ul {
+        list-style: none;
+        position: relative;
+        width: 754px;
+        height: 292px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .hi-slide>ul>li {
+        overflow: hidden;
+        position: absolute;
+        z-index: 0;
+        left: 377px;
+        top: 147px;
+        width: 0;
+        height: 0;
+        margin: 0;
+        padding: 0;
+        border: 3px solid white;
+        cursor: pointer;
+        background-color: #333;
+    }
+
+    .hi-slide>ul>li>img {
+        width: 100%;
+        height: 100%;
+        background-position: center;
+    }
+
+    /*Termina slider imgenes*/
+}
+/*Termina lg Pantallas PequeGrandes*/
+
+/*md Pantallas Medianas*/
+@media (min-width: 768px) and (max-width: 1023px) {
+    body {
+        font-size: 18px;
+    }
+
+    /*Navbar*/
+    .navcl {
+        background-color: #27292b
+    }
+
+    /*Navbar*/
+
+    /*Carrucel*/
+    .carru {
+        max-width: 100%;
+        max-height: none;
+        height: 650px;
+        width: 1500px;
+    }
+
+    /*Carrucel*/
+
+    /* Estilos personalizados para el encabezado */
+    .titulo-principal {
+        font-family: 'Impact', fantasy;
+        font-size: 48px;
+        font-weight: bold;
+        color: #000000;
+    }
+
+    .subtitulo {
+        font-family: 'Ayuthaya', fantasy;
+        font-size: 24px;
+        color: #242424;
+        margin-top: 20px;
+    }
+
+    /*Terminan Estilos personalizados*/
+
+    /*Empieza Estilo Categoria*/
+    .let {
+        font-family: 'Impact', fantasy;
+        color: #000000;
+    }
+    .lett {
+        font-family: 'Ayuthaya', fantasy;
+        color: #242424;
+    }
+
+    .cat {
+        width: 320px;
+        height: 320px;
+        border-radius: 100%;
+    }
+
+    .categorias-scroll {
+        display: flex;
+        overflow-x: auto;
+        scrollbar-width: none;
+        /* Para navegadores que soportan el estándar antiguo */
+        -ms-overflow-style: none;
+        /* Para Edge y navegadores basados en IE */
+    }
+
+    .categorias-scroll::-webkit-scrollbar {
+        display: none;
+        /* Ocultar la barra de desplazamiento en navegadores webkit */
+    }
+
+    .categoria {
+        flex: 0 0 auto;
+        margin-right: 20px;
+        /* Espacio entre las categorías */
+        text-align: center;
+        white-space: nowrap;
+        /* Evita que las categorías se rompan en múltiples líneas */
+    }
+
+    /*Termina Stilo Categorias*/
+
+    /*Empieza Card*/
+    .card-carousel {
+        display: flex;
+        /* Muestra las cards en una línea horizontal */
+        overflow-x: auto;
+        /* Permite el scroll horizontal */
+        scroll-snap-type: x mandatory;
+        /* Hace que el scroll se detenga en cada card */
+        padding: 10px;
+    }
+
+    /* Estilos para cada card */
+    .card {
+        font-family: 'Helvetica', fantasy;
+        min-width: 300px;
+        flex-shrink: 0;
+        /* Evita que las cards se reduzcan para ajustarse al contenedor */
+        margin-right: 20px;
+        /* Espacio entre las cards */
+        scroll-snap-align: start;
+        /* Define el punto de inicio para el scroll */
+        text-align: center;
+        /* Agrega más estilos de diseño para las cards aquí */
+    }
+
+    /* Estilos para la imagen del producto */
+    .card img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 8px;
+        margin-bottom: 10px;
+    }
+
+    /* Estilos para el botón "Añadir al carrito" */
+    .btn-add-to-cart {
+        font-family: 'Ayuthaya', fantasy;
+        padding: 8px 16px;
+        background-color: #27292b;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        /* Agrega más estilos de diseño para el botón aquí */
+    }
+
+    .h5 {
+        font-family: 'Impact', fantasy;
+    }
+    .compra {
+        font-family: 'Ayutaya', fantasy;
+        text-align: center;
+        background-color: #27292b;
+    }
+    .title {
+        text-align: center;
+        font-family: 'Impact', fantasy;
+        color: #000000;
+    }
+
+    /*Terminana cards*/
+
+    /*Slider imgenes*/
+    .hi-slide {
+        position: relative;
+        width: 754px;
+        height: 200px;
+        border-radius: 50px;
+        margin: 115px auto 0;
+    }
+
+    .hi-slide .hi-next,
+    .hi-slide .hi-prev {
+        position: absolute;
+        top: 50%;
+        width: 40px;
+        height: 40px;
+        margin-top: -20px;
+        border-radius: 50px;
+        line-height: 40px;
+        text-align: center;
+        cursor: pointer;
+        background-color: white;
+        color: black;
+        transition: all 0.7s;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .hi-slide .hi-next:hover,
+    .hi-slide .hi-prev:hover {
+        opacity: 1;
+        background-color: white;
+    }
+
+    .hi-slide .hi-prev {
+        left: 10px;
+    }
+
+    .hi-slide .hi-prev::before {
+        content: '<';
+    }
+
+    .hi-slide .hi-next {
+        right: 80px;
+    }
+
+    .hi-slide .hi-next::before {
+        content: '>';
+    }
+
+    .hi-slide>ul {
+        list-style: none;
+        position: relative;
+        width: 54px;
+        height: 20px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .hi-slide>ul>li {
+        overflow: hidden;
+        position: absolute;
+        z-index: 0;
+        left: 377px;
+        top: 147px;
+        width: 0;
+        height: 0;
+        margin: 0;
+        padding: 0;
+        border: 2px solid white;
+        cursor: pointer;
+        background-color: #333;
+    }
+
+    .hi-slide>ul>li>.Sli {
+        width: 100%;
+        height: 100%;
+        background-position: center;
+    }
+
+    /*Termina slider imgenes*/
+}
+/*Termina md Panrallas Medianas*/
+
+/*sm Pantallas Pequeñas*/
+@media (min-width: 340px) and (max-width: 767px) {
+    body {
+        font-size: 14px;
+    }
+
+    /*Navbar*/
+    .navcl {
+        background-color: #27292b
+    }
+    /*Navbar*/
+
+    .carru {
+        max-width: 100%;
+        max-height: none;
+        height: 500px;
+        width: 1500px;
+    }
+
+    /* Estilos personalizados para el encabezado */
+    .titulo-principal {
+        font-family: 'Impact', fantasy;
+        font-size: 48px;
+        font-weight: bold;
+        color: #000000;
+    }
+    .subtitulo {
+        font-family: 'Ayuthaya', fantasy;
+        font-size: 24px;
+        color: #242424;;
+        margin-top: 20px;
+    }
+    /*Terminan Estilos personalizados*/
+
+    /*Empieza Estilo Categoria*/
+    .let {
+        font-family: 'Impact', fantasy;
+        color: #000000;
+    }
+    .lett {
+        font-family: 'Ayuthaya', fantasy;
+        color: #242424;
+    }
+
+    .cat {
+        width: 320px;
+        height: 320px;
+        border-radius: 100%;
+    }
+
+    .categorias-scroll {
+        display: flex;
+        overflow-x: auto;
+        scrollbar-width: none;
+        /* Para navegadores que soportan el estándar antiguo */
+        -ms-overflow-style: none;
+        /* Para Edge y navegadores basados en IE */
+    }
+
+    .categorias-scroll::-webkit-scrollbar {
+        display: none;
+        /* Ocultar la barra de desplazamiento en navegadores webkit */
+    }
+
+    .categoria {
+        flex: 0 0 auto;
+        margin-right: 20px;
+        /* Espacio entre las categorías */
+        text-align: center;
+        white-space: nowrap;
+        /* Evita que las categorías se rompan en múltiples líneas */
+    }
+
+    /*Termina Stilo Categorias*/
+
+    /*Empieza Card*/
+    .card-carousel {
+        display: flex;
+        /* Muestra las cards en una línea horizontal */
+        overflow-x: auto;
+        /* Permite el scroll horizontal */
+        scroll-snap-type: x mandatory;
+        /* Hace que el scroll se detenga en cada card */
+        padding: 10px;
+    }
+
+    /* Estilos para cada card */
+    .card {
+        font-family: 'Helvetica', fantasy;
+        min-width: 300px;
+        flex-shrink: 0;
+        /* Evita que las cards se reduzcan para ajustarse al contenedor */
+        margin-right: 20px;
+        /* Espacio entre las cards */
+        scroll-snap-align: start;
+        /* Define el punto de inicio para el scroll */
+        text-align: center;
+        /* Agrega más estilos de diseño para las cards aquí */
+    }
+
+    /* Estilos para la imagen del producto */
+    .card img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 8px;
+        margin-bottom: 10px;
+    }
+
+    /* Estilos para el botón "Añadir al carrito" */
+    .btn-add-to-cart {
+        font-family: 'Helvetica', fantasy;
+        padding: 8px 16px;
+        background-color: #27292b;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        /* Agrega más estilos de diseño para el botón aquí */
+    }
+    .h5 {
+        font-family: 'Impact', fantasy;
+    }
+    .compra {
+        font-family: 'Ayuthaya', fantasy;
+        text-align: center;
+        background-color: #27292b;
+    }
+    .title {
+        text-align: center;
+        font-family: 'Impact', fantasy;
+        color: #000000;
+    }
+    /*Terminana cards*/
+
+    /*Empieza Sliter imagenes*/
+    .hi-slide {
+        position: relative;
+        width: 354px;
+        height: 150px;
+        left: -120px;
+        border-radius: 50px;
+        margin: 115px auto 0;
+    }
+
+    .hi-slide .hi-next,
+    .hi-slide .hi-prev {
+        position: absolute;
+        top: 50%;
+        width: 40px;
+        height: 40px;
+        margin-top: -20px;
+        border-radius: 50px;
+        line-height: 40px;
+        text-align: center;
+        cursor: pointer;
+        background-color: white;
+        color: black;
+        transition: all 0.7s;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .hi-slide .hi-next:hover,
+    .hi-slide .hi-prev:hover {
+        opacity: 1;
+        background-color: white;
+    }
+
+    .hi-slide .hi-prev {
+        left: 100px;
+    }
+
+    .hi-slide .hi-prev::before {
+        content: '<';
+    }
+
+    .hi-slide .hi-next {
+        right: -140px;
+    }
+
+    .hi-slide .hi-next::before {
+        content: '>';
+    }
+
+    .hi-slide>ul {
+        list-style: none;
+        position: relative;
+        width: 54px;
+        height: 20px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .hi-slide>ul>li {
+        overflow: hidden;
+        position: absolute;
+        z-index: 0;
+        left: 377px;
+        top: 147px;
+        width: 0;
+        height: 0;
+        margin: 0;
+        padding: 0;
+        border: 2px solid white;
+        cursor: pointer;
+        background-color: #333;
+    }
+
+    .hi-slide>ul>li>.Sli {
+        width: 100%;
+        height: 100%;
+        background-position: center;
+    }
+
+    /*Termina slider imgenes*/
+}
+/*Termina sm Pantallas Pequeñas*/

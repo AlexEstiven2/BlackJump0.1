@@ -1,0 +1,152 @@
+/* Estilos generales para todos los dispositivos */
+body {
+    font-size: 16px;
+}
+/*2xl Pantallas Grandes*/
+@media (min-width: 1536px) {
+    body {
+        font-size: 20px;
+    }
+
+    /*Navbar*/
+    .izq1{
+        position: relative;
+        left: -250px;
+    }
+    .der1{
+        position: relative;
+        right: -250px;
+    }
+    .der {
+        margin-left: 320px;
+    }
+    .izq {
+        margin-right: 350px;
+    }
+    /*Navbar*/
+
+    #map {
+        height: 550px; /* ajusta la altura del mapa según tus necesidades */
+        width: 100%; /* ocupa todo el ancho disponible */
+    }
+    h1{
+        text-align: center;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+
+}
+/*Termina 2xl Pantallas Grandes*/
+
+/*xl Pantallas SemiGrandes*/
+@media (min-width: 1280px) and (max-width: 1535px) {
+    body {
+        font-size: 20px;
+    }
+
+    /*Navbar*/
+    .izq1{
+        position: relative;
+        left: -50px;
+    }
+    .der1{
+        position: relative;
+        right: -50px;
+    }
+    .der {
+        margin-left: 220px;
+    }
+    .izq {
+        margin-right: 250px;
+    }
+    /*Navbar*/
+
+    #map {
+        height: 550px; /* ajusta la altura del mapa según tus necesidades */
+        width: 100%; /* ocupa todo el ancho disponible */
+    }
+    h1{
+        text-align: center;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+
+}
+/*Termina xl Pantallas SemiGrandes*/
+
+/*lg Pantallas PequeGrandes*/
+@media (min-width: 1024px) and (max-width: 1279px) {
+    body {
+        font-size: 20px;
+    }
+
+    /*Navbar*/
+    .izq1{
+        position: relative;
+        left: -20px;
+    }
+    .der1{
+        position: relative;
+        right: -100px;
+    }
+    .der {
+        margin-left: 120px;
+    }
+    .izq {
+        margin-right: 150px;
+    }
+    /*Navbar*/
+
+    #map {
+        height: 550px; /* ajusta la altura del mapa según tus necesidades */
+        width: 100%; /* ocupa todo el ancho disponible */
+    }
+    h1{
+        text-align: center;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+
+}
+/*Termina lg Pantallas PequeGrandes*/
+
+/*md Pantallas Medianas*/
+@media (min-width: 768px) and (max-width: 1023px) {
+    body {
+        font-size: 18px;
+    }
+
+    /*Navbar*/
+    .izq {
+        margin-right: 30px;
+    }
+    .der {
+        margin-left: 3px;
+    }
+    /*Navbar*/
+
+    #map {
+        height: 670px; /* ajusta la altura del mapa según tus necesidades */
+        width: 100%; /* ocupa todo el ancho disponible */
+    }
+    h1{
+        text-align: center;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+
+}
+/*Termina md Panrallas Medianas*/
+
+/*sm Pantallas Pequeñas*/
+@media (min-width: 340px) and (max-width: 767px) {
+    body {
+        font-size: 14px;
+    }
+    #map {
+        height: 500px; /* ajusta la altura del mapa según tus necesidades */
+        width: 100%; /* ocupa todo el ancho disponible */
+    }
+    h1{
+        text-align: center;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+}
+/*Termina sm Pantallas Pequeñas*/
+

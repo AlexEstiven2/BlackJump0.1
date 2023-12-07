@@ -1,0 +1,847 @@
+/* Estilos generales para todos los dispositivos */
+body {
+    font-size: 16px;
+}
+/*3xl Pantallas Grandes*/
+@media (min-width: 1850px){
+    body {
+        font-size: 20px;
+    }
+
+    /*Navbar*/
+    .navcl { 
+        background-color: #27292b
+    }
+
+    .nav {
+        position: relative;
+        left: 660px;
+    }
+    /*Navbar*/
+
+    /*Carrucel*/
+    .carru {
+        max-width: 100%;
+        max-height: none;
+        height: 900px;
+        width: 2500px;
+    }
+
+    /*Carrucel*/
+
+    /* Estilos personalizados para el encabezado */
+    .titulo-principal {
+        font-family: 'Impact', fantasy;
+        font-size: 48px;
+        font-weight: bold;
+        color: #000000;
+    }
+    .subtitulo {
+        font-family: 'Ayuthaya', fantasy;
+        font-size: 15px;
+        color: #212529;
+        margin-top: 20px;
+    }
+    /*Terminan Estilos personalizados*/
+
+    /*Empieza Estilo Categoria*/
+    .let {
+        font-family: 'Impact', fantasy;
+    }
+    .lett {
+        font-family: 'Ayuthaya', fantasy;
+        color: #212529;
+    }
+
+    .h5 {
+        font-family: 'Impact', fantasy;
+    }
+
+    /*Termina Stilo Categorias*/
+
+    /*Slider imgenes*/
+    .hi-slide {
+        position: relative;
+        width: 754px;
+        height: 292px;
+        border-radius: 50px;
+        margin: 115px auto 0;
+    }
+
+    .hi-slide .hi-next,
+    .hi-slide .hi-prev {
+        position: absolute;
+        top: 50%;
+        width: 40px;
+        height: 40px;
+        margin-top: -20px;
+        border-radius: 50px;
+        line-height: 40px;
+        text-align: center;
+        cursor: pointer;
+        background-color: white;
+        color: black;
+        transition: all 0.7s;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .hi-slide .hi-next:hover,
+    .hi-slide .hi-prev:hover {
+        opacity: 1;
+        background-color: white;
+    }
+
+    .hi-slide .hi-prev {
+        left: -60px;
+    }
+
+    .hi-slide .hi-prev::before {
+        content: '<';
+    }
+
+    .hi-slide .hi-next {
+        right: -60px;
+    }
+
+    .hi-slide .hi-next::before {
+        content: '>';
+    }
+
+    .hi-slide>ul {
+        list-style: none;
+        position: relative;
+        width: 754px;
+        height: 292px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .hi-slide>ul>li {
+        overflow: hidden;
+        position: absolute;
+        z-index: 0;
+        left: 377px;
+        top: 147px;
+        width: 0;
+        height: 0;
+        margin: 0;
+        padding: 0;
+        border: 3px solid white;
+        cursor: pointer;
+        background-color: #333;
+    }
+
+    .hi-slide>ul>li>img {
+        width: 100%;
+        height: 100%;
+        background-position: center;
+    }
+
+    /*Termina slider imgenes*/
+}
+/*Termina 3xl Pantallas Grandes*/
+
+/*2xl Pantallas Grandes*/
+@media (min-width: 1536px) and (max-width: 1849px) {
+    body {
+        font-size: 20px;
+    }
+
+    /*Navbar*/
+    .navcl {
+        background-color: #27292b
+    }
+    .nav {
+        position: relative;
+        left: 430px;
+    }
+    /*Navbar*/
+
+    /*Carrucel*/
+    .carru {
+        max-width: 100%;
+        max-height: none;
+        height: 900px;
+        width: 2500px;
+    }
+
+    /*Carrucel*/
+
+    /* Estilos personalizados para el encabezado */
+    .titulo-principal {
+        font-family: 'Impact', fantasy;
+        font-size: 48px;
+        font-weight: bold;
+        color: #000000;
+    }
+    .subtitulo {
+        font-family: 'Ayuthaya', fantasy;
+        font-size: 15px;
+        color: #212529;
+        margin-top: 20px;
+    }
+    /*Terminan Estilos personalizados*/
+
+    /*Empieza Estilo Categoria*/
+    .let {
+        font-family: 'Impact', fantasy;
+    }
+    .lett {
+        font-family: 'Ayuthaya', fantasy;
+        color: #212529;
+    }
+
+    .h5 {
+        font-family: 'Impact', fantasy;
+    }
+
+    /*Termina Stilo Categorias*/
+
+    /*Slider imgenes*/
+    .hi-slide {
+        position: relative;
+        width: 754px;
+        height: 292px;
+        border-radius: 50px;
+        margin: 115px auto 0;
+    }
+
+    .hi-slide .hi-next,
+    .hi-slide .hi-prev {
+        position: absolute;
+        top: 50%;
+        width: 40px;
+        height: 40px;
+        margin-top: -20px;
+        border-radius: 50px;
+        line-height: 40px;
+        text-align: center;
+        cursor: pointer;
+        background-color: white;
+        color: black;
+        transition: all 0.7s;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .hi-slide .hi-next:hover,
+    .hi-slide .hi-prev:hover {
+        opacity: 1;
+        background-color: white;
+    }
+
+    .hi-slide .hi-prev {
+        left: -60px;
+    }
+
+    .hi-slide .hi-prev::before {
+        content: '<';
+    }
+
+    .hi-slide .hi-next {
+        right: -60px;
+    }
+
+    .hi-slide .hi-next::before {
+        content: '>';
+    }
+
+    .hi-slide>ul {
+        list-style: none;
+        position: relative;
+        width: 754px;
+        height: 292px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .hi-slide>ul>li {
+        overflow: hidden;
+        position: absolute;
+        z-index: 0;
+        left: 377px;
+        top: 147px;
+        width: 0;
+        height: 0;
+        margin: 0;
+        padding: 0;
+        border: 3px solid white;
+        cursor: pointer;
+        background-color: #333;
+    }
+
+    .hi-slide>ul>li>img {
+        width: 100%;
+        height: 100%;
+        background-position: center;
+    }
+
+    /*Termina slider imgenes*/
+}
+/*Termina 2xl Pantallas Grandes*/
+
+/*xl Pantallas SemiGrandes*/
+@media (min-width: 1280px) and (max-width: 1535px) {
+    body {
+        font-size: 20px;
+    }
+
+    /*Navbar*/
+    .navcl {
+        background-color: #27292b
+    }
+    .nav {
+        position: relative;
+        left: 298px;
+    }
+    .navl {
+        position: relative;
+        left: 30px;
+    }
+    .navll {
+        position: relative;
+        right: 30px;
+    }
+    /*Navbar*/
+
+    /*Carrucel*/
+    .carru {
+        max-width: 100%;
+        max-height: none;
+        height: 900px;
+        width: 2500px;
+    }
+
+    /*Carrucel*/
+
+    /* Estilos personalizados para el encabezado */
+    .titulo-principal {
+        font-family: 'Impact', fantasy;
+        font-size: 48px;
+        font-weight: bold;
+        color: #000000;
+    }
+    .subtitulo {
+        font-family: 'Ayuthaya', fantasy;
+        font-size: 15px;
+        color: #212529;
+        margin-top: 20px;
+    }
+    /*Terminan Estilos personalizados*/
+
+    /*Empieza Estilo Categoria*/
+    .let {
+        font-family: 'Impact', fantasy;
+    }
+    .lett {
+        font-family: 'Ayuthaya', fantasy;
+        color: #212529;
+    }
+
+    .h5 {
+        font-family: 'Impact', fantasy;
+    }
+
+    /*Termina Stilo Categorias*/
+
+
+    /*Slider imgenes*/
+    .hi-slide {
+        position: relative;
+        width: 754px;
+        height: 292px;
+        border-radius: 50px;
+        margin: 115px auto 0;
+    }
+
+    .hi-slide .hi-next,
+    .hi-slide .hi-prev {
+        position: absolute;
+        top: 50%;
+        width: 40px;
+        height: 40px;
+        margin-top: -20px;
+        border-radius: 50px;
+        line-height: 40px;
+        text-align: center;
+        cursor: pointer;
+        background-color: white;
+        color: black;
+        transition: all 0.7s;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .hi-slide .hi-next:hover,
+    .hi-slide .hi-prev:hover {
+        opacity: 1;
+        background-color: white;
+    }
+
+    .hi-slide .hi-prev {
+        left: -60px;
+    }
+
+    .hi-slide .hi-prev::before {
+        content: '<';
+    }
+
+    .hi-slide .hi-next {
+        right: -60px;
+    }
+
+    .hi-slide .hi-next::before {
+        content: '>';
+    }
+
+    .hi-slide>ul {
+        list-style: none;
+        position: relative;
+        width: 754px;
+        height: 292px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .hi-slide>ul>li {
+        overflow: hidden;
+        position: absolute;
+        z-index: 0;
+        left: 377px;
+        top: 147px;
+        width: 0;
+        height: 0;
+        margin: 0;
+        padding: 0;
+        border: 3px solid white;
+        cursor: pointer;
+        background-color: #333;
+    }
+
+    .hi-slide>ul>li>img {
+        width: 100%;
+        height: 100%;
+        background-position: center;
+    }
+
+    /*Termina slider imgenes*/
+}
+/*Termina xl Pantallas SemiGrandes*/
+
+/*lg Pantallas PequeGrandes*/
+@media (min-width: 1024px) and (max-width: 1279px) {
+    body {
+        font-size: 20px;
+    }
+
+    /*Navbar*/
+    .navcl {
+        background-color: #27292b
+    }
+    .nav {
+        position: relative;
+        left: 280px;
+    }
+    .navl {
+        position: relative;
+        left: 30px;
+    }
+    .navll {
+        position: relative;
+        right: 30px;
+    }
+    /*Navbar*/
+
+    /*Carrucel*/
+    .carru {
+        max-width: 100%;
+        max-height: none;
+        height: 900px;
+        width: 2500px;
+    }
+
+    /*Carrucel*/
+
+    /* Estilos personalizados para el encabezado */
+    .titulo-principal {
+        font-family: 'Impact', fantasy;
+        font-size: 48px;
+        font-weight: bold;
+        color: #000000;
+    }
+    .subtitulo {
+        font-family: 'Ayuthaya', fantasy;
+        font-size: 15px;
+        color: #212529;
+        margin-top: 20px;
+    }
+    /*Terminan Estilos personalizados*/
+
+    /*Empieza Estilo Categoria*/
+    .let {
+        font-family: 'Impact', fantasy;
+    }
+    .lett {
+        font-family: 'Ayuthaya', fantasy;
+        color: #212529;
+    }
+
+    .h5 {
+        font-family: 'Impact', fantasy;
+    }
+
+    /*Termina Stilo Categorias*/
+
+
+    /*Slider imgenes*/
+    .hi-slide {
+        position: relative;
+        width: 754px;
+        height: 292px;
+        border-radius: 50px;
+        margin: 115px auto 0;
+    }
+
+    .hi-slide .hi-next,
+    .hi-slide .hi-prev {
+        position: absolute;
+        top: 50%;
+        width: 40px;
+        height: 40px;
+        margin-top: -20px;
+        border-radius: 50px;
+        line-height: 40px;
+        text-align: center;
+        cursor: pointer;
+        background-color: white;
+        color: black;
+        transition: all 0.7s;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .hi-slide .hi-next:hover,
+    .hi-slide .hi-prev:hover {
+        opacity: 1;
+        background-color: white;
+    }
+
+    .hi-slide .hi-prev {
+        left: -60px;
+    }
+
+    .hi-slide .hi-prev::before {
+        content: '<';
+    }
+
+    .hi-slide .hi-next {
+        right: -60px;
+    }
+
+    .hi-slide .hi-next::before {
+        content: '>';
+    }
+
+    .hi-slide>ul {
+        list-style: none;
+        position: relative;
+        width: 754px;
+        height: 292px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .hi-slide>ul>li {
+        overflow: hidden;
+        position: absolute;
+        z-index: 0;
+        left: 377px;
+        top: 147px;
+        width: 0;
+        height: 0;
+        margin: 0;
+        padding: 0;
+        border: 3px solid white;
+        cursor: pointer;
+        background-color: #333;
+    }
+
+    .hi-slide>ul>li>img {
+        width: 100%;
+        height: 100%;
+        background-position: center;
+    }
+
+    /*Termina slider imgenes*/
+}
+/*Termina lg Pantallas PequeGrandes*/
+
+/*md Pantallas Medianas*/
+@media (min-width: 768px) and (max-width: 1023px) {
+    body {
+        font-size: 18px;
+    }
+
+    /*Navbar*/
+    .navcl {
+        background-color: #27292b
+    }
+    /*Navbar*/
+
+    /*Carrucel*/
+    .carru {
+        max-width: 100%;
+        max-height: none;
+        height: 650px;
+        width: 1500px;
+    }
+
+    /*Carrucel*/
+
+    /* Estilos personalizados para el encabezado */
+    .titulo-principal {
+        font-family: 'Impact', fantasy;
+        font-size: 48px;
+        font-weight: bold;
+        color: #000000;
+    }
+    .subtitulo {
+        font-family: 'Ayuthaya', fantasy;
+        font-size: 15px;
+        color: #212529;
+        margin-top: 20px;
+    }
+    /*Terminan Estilos personalizados*/
+
+    /*Empieza Estilo Categoria*/
+    .let {
+        font-family: 'Impact', fantasy;
+    }
+    .lett {
+        font-family: 'Ayuthaya', fantasy;
+        color: #212529;
+    }
+
+    .h5 {
+        font-family: 'Impact', fantasy;
+    }
+
+    /*Termina Stilo Categorias*/
+
+    /*Slider imgenes*/
+
+    .hi-slide {
+        position: relative;
+        width: 700px;
+        height: 200px;
+        border-radius: 50px;
+        margin: 115px auto 0;
+    }
+
+    .hi-slide .hi-next,
+    .hi-slide .hi-prev {
+        position: absolute;
+        top: 50%;
+        width: 40px;
+        height: 40px;
+        margin-top: -20px;
+        border-radius: 50px;
+        line-height: 40px;
+        text-align: center;
+        cursor: pointer;
+        background-color: white;
+        color: black;
+        transition: all 0.7s;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .hi-slide .hi-next:hover,
+    .hi-slide .hi-prev:hover {
+        opacity: 1;
+        background-color: white;
+    }
+
+    .hi-slide .hi-prev {
+        left: 10px;
+    }
+
+    .hi-slide .hi-prev::before {
+        content: '<';
+    }
+
+    .hi-slide .hi-next {
+        right: 30px;
+    }
+
+    .hi-slide .hi-next::before {
+        content: '>';
+    }
+
+    .hi-slide>ul {
+        list-style: none;
+        position: relative;
+        width: 54px;
+        height: 20px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .hi-slide>ul>li {
+        overflow: hidden;
+        position: absolute;
+        z-index: 0;
+        left: 377px;
+        top: 147px;
+        width: 0;
+        height: 0;
+        margin: 0;
+        padding: 0;
+        border: 2px solid white;
+        cursor: pointer;
+        background-color: #333;
+    }
+
+    .hi-slide>ul>li>.Sli {
+        width: 100%;
+        height: 100%;
+        background-position: center;
+    }
+
+    /*Termina slider imgenes*/
+}
+/*Termina md Panrallas Medianas*/
+
+/*sm Pantallas Pequeñas*/
+@media (min-width: 340px) and (max-width: 767px) {
+    body {
+        font-size: 14px;
+    }
+
+    /*Navbar*/
+    .navcl {
+        background-color: #27292b
+    }
+    /*Navbar*/
+
+    .carru {
+        max-width: 100%;
+        max-height: none;
+        height: 500px;
+        width: 1500px;
+    }
+
+    /* Estilos personalizados para el encabezado */
+    .titulo-principal {
+        font-family: 'Impact', fantasy;
+        font-size: 48px;
+        font-weight: bold;
+        color: #000000;
+    }
+    .subtitulo {
+        font-family: 'Ayuthaya', fantasy;
+        font-size: 15px;
+        color: #212529;
+        margin-top: 20px;
+    }
+    /*Terminan Estilos personalizados*/
+
+    /*Empieza Estilo Categoria*/
+    .let {
+        font-family: 'Impact', fantasy;
+    }
+    .lett {
+        font-family: 'Ayuthaya', fantasy;
+        color: #212529;
+    }
+
+    .h5 {
+        font-family: 'Impact', fantasy;
+    }
+
+    /*Termina Stilo Categorias*/
+
+    /*Empieza Slider Imagenes*/
+    .hi-slide {
+        position: relative;
+        width: 300px;
+        height: 150px;
+        left: -150px;
+        border-radius: 50px;
+        margin: 115px auto 0;
+    }
+
+    .hi-slide .hi-next,
+    .hi-slide .hi-prev {
+        position: absolute;
+        top: 50%;
+        width: 40px;
+        height: 40px;
+        margin-top: -20px;
+        border-radius: 50px;
+        line-height: 40px;
+        text-align: center;
+        cursor: pointer;
+        background-color: white;
+        color: black;
+        transition: all 0.7s;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .hi-slide .hi-next:hover,
+    .hi-slide .hi-prev:hover {
+        opacity: 1;
+        background-color: white;
+    }
+
+    .hi-slide .hi-prev {
+        left: 140px;
+    }
+
+    .hi-slide .hi-prev::before {
+        content: '<';
+    }
+
+    .hi-slide .hi-next {
+        right: -160px;
+    }
+
+    .hi-slide .hi-next::before {
+        content: '>';
+    }
+
+    .hi-slide>ul {
+        list-style: none;
+        position: relative;
+        width: 54px;
+        height: 20px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .hi-slide>ul>li {
+        overflow: hidden;
+        position: absolute;
+        z-index: 0;
+        left: 377px;
+        top: 147px;
+        width: 0;
+        height: 0;
+        margin: 0;
+        padding: 0;
+        border: 2px solid white;
+        cursor: pointer;
+        background-color: #333;
+    }
+
+    .hi-slide>ul>li>.Sli {
+        width: 100%;
+        height: 100%;
+        background-position: center;
+    }
+
+    /*Termina slider imgenes*/
+}
+/*Termina sm Pantallas Pequeñas*/
